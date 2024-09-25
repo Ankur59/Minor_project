@@ -1,0 +1,372 @@
+/* General styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #FFFFFF;
+}
+
+/* Navigation bar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 5%;
+  color: white;
+  width: 100%;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  flex-wrap: wrap;
+}
+
+.navbar-logo img {
+  height: 50px;
+}
+
+.navbar-options {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-option {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.navbar-option:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+.navbar-auth {
+  display: flex;
+  gap: 10px;
+}
+
+.auth-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.signin-button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.register-button {
+  background-color: #008CBA;
+  color: white;
+}
+
+/* Home content styles */
+.home-content {
+  max-width: 1200px;
+  margin: 80px auto 0;
+  padding: 20px;
+  padding-top: 70px; /* Adjust this value based on your navbar height */
+}
+
+.about-section {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+.about-section h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.about-section p {
+  line-height: 1.6;
+  color: #666;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 5%;
+  }
+
+  .navbar-options, .navbar-auth {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .navbar-option, .auth-button {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Adjust this value for mobile */
+  .home-content {
+    padding-top: 200px; /* Increase this value to account for the taller navbar on mobile */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar-logo {
+    font-size: 20px;
+  }
+
+  .home-content {
+    padding: 10px;
+    padding-top: 220px; /* Adjust as needed */
+  }
+
+  .about-section {
+    padding: 15px;
+  }
+}
+
+/* Company logos styles */
+.company-logos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.company-logo {
+  max-width: 120px;
+  height: auto;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.company-logo:hover {
+  opacity: 1;
+}
+
+/* Update responsive styles */
+@media screen and (max-width: 768px) {
+  .company-logos {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .company-logo {
+    max-width: 80px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .company-logo {
+    max-width: 60px;
+  }
+}
+
+.home-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 80px auto 0;
+  padding: 20px;
+}
+
+.text-content {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.text-content h1 {
+  font-size: 2.5em;
+  color: #0a2540;
+  margin-bottom: 20px;
+}
+
+.text-content p {
+  font-size: 1.1em;
+  color: #425466;
+  margin-bottom: 30px;
+}
+
+.start-election-button, .explore-options-button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.start-election-button {
+  background-color: #ff7a59;
+  color: white;
+}
+
+.explore-options-button {
+  background-color: transparent;
+  color: #ff7a59;
+  border: 1px solid #ff7a59;
+}
+
+.election-cover-image {
+  max-width: 50%;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .home-content {
+    flex-direction: column;
+  }
+
+  .text-content {
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .election-cover-image {
+    max-width: 100%;
+  }
+}
+
+/* News box styles */
+.news-box {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-top: 40px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.news-box h3 {
+  color: #0a2540;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.news-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.news-item {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.news-item:hover {
+  transform: translateY(-5px);
+}
+
+.news-item h4 {
+  color: #0a2540;
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.news-item p {
+  color: #425466;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.news-item a {
+  color: #ff7a59;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.news-item a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .news-box {
+    padding: 20px;
+  }
+
+  .news-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Why administrators and voters love us section */
+.why-love-us {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.why-love-us h2 {
+  font-size: 28px;
+  color: #1a3b5d;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.love-us-features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.love-us-feature {
+  display: flex;
+  align-items: flex-start;
+}
+
+.feature-icon {
+  width: 24px;
+  height: 24px;
+  background-color: #ff8c00;
+  border-radius: 50%;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.feature-content h3 {
+  font-size: 18px;
+  color: #1a3b5d;
+  margin: 0 0 5px 0;
+}
+
+.feature-content p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+.learn-more {
+  color: #ff8c00;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.learn-more:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .love-us-features {
+    grid-template-columns: 1fr;
+  }
+}

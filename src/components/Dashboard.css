@@ -1,0 +1,89 @@
+/* General container */
+.dashboard-container {
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #000080; /* Navy Blue for Ashoka Chakra */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+/* Election card grid layout */
+.election-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Election card style */
+.election-card {
+  background-color: #ffffff; /* White background */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.election-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Election title */
+.election-card h3 {
+  font-size: 1.5rem;
+  color: #ff9933; /* Saffron color for election title */
+  margin-bottom: 15px;
+}
+
+/* Candidate vote button group */
+.candidates {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Vote button */
+.vote-button {
+  background-color: #138808; /* Indian Flag Green */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+  text-align: left;
+  width: 100%;
+}
+
+.vote-button:hover {
+  background-color: #0a5c05; /* Darker green on hover */
+}
+
+.vote-button:focus {
+  outline: none;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+  .vote-button {
+    width: 100%;
+  }
+}

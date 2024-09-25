@@ -1,0 +1,77 @@
+/* Register.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .header {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: #ff9933; /* Saffron (Indian flag) */
+    margin-bottom: 20px;
+  }
+  
+  .flag-colors {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  
+  .flag-color {
+    height: 10px;
+    width: 50px;
+  }
+  
+  .saffron {
+    background-color: #ff9933;
+  }
+  
+  .white {
+    background-color: #ffffff;
+  }
+  
+  .green {
+    background-color: #138808; /* Green (Indian flag) */
+  }
+  
+  .register-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #138808; /* Green color for button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #0d6d05;
+  }
+  
